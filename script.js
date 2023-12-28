@@ -36,7 +36,7 @@ ch.addEventListener("click",(e)=>{
 
 function getTimings(city, country) {
     try {
-        p = fetch(`http://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=1&school=1`)
+        p = fetch(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=1&school=1`)
         return p
     } catch (error) {
         return -1
